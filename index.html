@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Neves: Kenzie Blog</title>
+  <link rel="shortcut icon" href="./src/images/icon.png" type="image/x-icon">
+  <script type="module" defer src="./src/js/Api.js"></script> 
+  <script type="module" defer src="./src/js/toast.js"></script> 
+  <link rel="stylesheet" href="./src/styles/reset.css"> 
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/toast.css">
+  <link rel="stylesheet" href="./src/styles/toasterror.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  
+</head>
+
+<body>
+
+  <div class=" modal-login display-none">
+    <div class="modal login-box">
+      <form action="" class="login-inputs">
+        <h2 class="login-title">Log in</h2>
+        <input type="email" name="login" id="login" class="login" placeholder="Digite seu e-mail" required>
+        <input type="password" name="password" id="password" class="password" placeholder="Digite sua senha" required>
+        <button class="modal login-button"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        <h6>Não tem conta ainda? <a class="register-link">Cadastre-se!</a></h6>
+        <h6>Esqueceu sua <a class="forgot-link">senha?</a></h6>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-register display-none" >
+    <div class="modal register-box">
+      <form action="" class="login-inputs">
+        <h2 class="login-title">Registrar-se</h2>
+        <input type="text" class="login-register" placeholder="Digite seu usuário"> 
+        <input type="email"  class="email-register" placeholder="Digite seu e-mail" required>
+        <input type="password"  class="password-register" placeholder="Digite sua senha" required>
+        <input type="text" name="url" id="url" class="url-register" placeholder="URL da sua Imagem">
+        <button class="modal register-button"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        <h6>Já tem uma conta? <a class="login-link">Faça Login!</a></h6>
+      </form>
+    </div>
+  </div>
+
+  <header>
+    <div>
+      <figure>
+        <img src="./src/images/kenzielogo.jpg" alt="" class="user-image">
+        <h1></h1>
+        <h1 class="user-name">Olá, Kenzinho(a)!</h1>
+      </figure>
+      <button class="logout-button">
+        <i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="editor-wrapper">
+      <textarea class="editor" placeholder="O que você está pensando hoje?"></textarea> <i id="send-icon"class="fa fa-paper-plane" aria-hidden="true"></i>
+    </div>
+
+    <h1 class="posts-title">O que seus amigos estão dizendo:</h1>
+  </main>
+</body>
+
+</html>
